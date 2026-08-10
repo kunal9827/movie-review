@@ -1,122 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>movie review</title>
-<style>
-body{
-  margin:0;
-  font-family:Arial;
-  background:#0f0f1a;
-  color:#fff;
-  text-align:center;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>movie review</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: #0f0f1a;
+      color: #fff;
+      text-align: center;
+    }
 
-section{padding:30px 15px;border-bottom:1px solid #333;}
+    section {
+      padding: 30px 15px;
+      border-bottom: 1px solid #333;
+    }
 
-.hero{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  align-items:center;
-  gap:30px;
-}
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
 
-img{
-  width:300px;
-  border-radius:10px;
-  box-shadow:0 0 15px #7a2ac4;
-}
+    img {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #7a2ac4;
+    }
 
-.card{
-  background:#1a1a2e;
-  margin:20px auto;
-  padding:20px;
-  max-width:600px;
-  border-radius:10px;
-}
+    .card {
+      background: #1a1a2e;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 600px;
+      border-radius: 10px;
+    }
 
-input,textarea,select,button{
-  width:100%;
-  padding:8px;
-  margin:8px 0;
-  border:none;
-  border-radius:5px;
-}
+    input,
+    textarea,
+    select,
+    button {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 5px;
+    }
 
-button{
-  background:#7a2ac4;
-  color:#fff;
-  cursor:pointer;
-}
+    button {
+      background: #7a2ac4;
+      color: #fff;
+      cursor: pointer;
+    }
 
-button:hover{background:#a855f7;}
+    button:hover {
+      background: #a855f7;
+    }
 
-video,audio{
-  width:90%;
-  max-width:800px;
-  border-radius:10px;
-}
-</style>
+    video,
+    audio {
+      width: 90%;
+      max-width: 800px;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 
 <body>
 
-<section class="hero">
-  <div>
-    <h1>Interstellar</h1>
-    <p><em>A Journey Beyond the Stars</em></p>
-    <ul style="text-align:left">
-      <li><b>Director:</b> Christopher Nolan</li>
-      <li><b>Year:</b> 2014</li>
-      <li><b>Genre:</b> Sci-Fi / Drama</li>
-      <li><b>Duration:</b> 169 min</li>
-    </ul>
-  </div>
+  <section class="hero">
+    <div>
+      <h1>Interstellar</h1>
+      <p><em>A Journey Beyond the Stars</em></p>
+      <ul style="text-align:left">
+        <li><b>Director:</b> Christopher Nolan</li>
+        <li><b>Year:</b> 2014</li>
+        <li><b>Genre:</b> Sci-Fi / Drama</li>
+        <li><b>Duration:</b> 169 min</li>
+      </ul>
+    </div>
 
-  <img src="https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg">
-</section>
+    <img src="https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg">
+  </section>
 
-<section>
-  <h2>Trailer</h2>
-  <video controls poster="https://i.ytimg.com/vi/zSWdZVtXT7E/maxresdefault.jpg">
-    <source src="movie-trailer.mp4" type="video/mp4">
-  </video>
-</section>
+  <section>
+    <h2>Trailer</h2>
+    <video controls poster="https://i.ytimg.com/vi/zSWdZVtXT7E/maxresdefault.jpg">
+      <source src="movie-trailer.mp4" type="video/mp4">
+    </video>
+  </section>
 
-<section>
-<h2>Review ⭐⭐⭐⭐_  8.9/10</h2>
-<div class="card">
-<p><b>Interstellar</b> is one of the greatest sci-fi films ever made. 
-    Emotional, powerful, and visually stunning.</p>
-<p><i>"The best space epic ever made!"</i></p>
-</div>
-</section>
+  <section>
+    <h2>Review ⭐⭐⭐⭐_ 8.9/10</h2>
+    <div class="card">
+      <p><b>Interstellar</b> is one of the greatest sci-fi films ever made.
+        Emotional, powerful, and visually stunning.</p>
+      <p><i>"The best space epic ever made!"</i></p>
+    </div>
+  </section>
 
-<section>
-  <h2>Rate This Movie</h2>
-  <form>
-    <input type="text" placeholder="Your Name">
-    <input type="range" min="1" max="10">
-    <input type="number" min="1" max="10" placeholder="Exact Rating">
-    <select>
-      <option>Story</option>
-      <option>Visual Effects</option>
-      <option>Soundtrack</option>
-      <option>Acting</option>
-    </select>
-    <textarea rows="4" placeholder="Write your review..."></textarea>
-    <button>Submit</button>
-  </form>
-</section>
+  <section>
+    <h2>Rate This Movie</h2>
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="range" min="1" max="10">
+      <input type="number" min="1" max="10" placeholder="Exact Rating">
+      <select>
+        <option>Story</option>
+        <option>Visual Effects</option>
+        <option>Soundtrack</option>
+        <option>Acting</option>
+      </select>
+      <textarea rows="4" placeholder="Write your review..."></textarea>
+      <button>Submit</button>
+    </form>
+  </section>
 
-<section>
-  <h2>Score Preview</h2>
-  <audio controls>
-    <source src="background-score.mp3" type="audio/mpeg">
-  </audio>
-</section>
+  <section>
+    <h2>Score Preview</h2>
+    <audio controls>
+      <source src="background-score.mp3" type="audio/mpeg">
+    </audio>
+  </section>
 
 </body>
+
 </html>
