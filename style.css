@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: yellow;
+}
+
+#main-text {
+    color: lightgray;
+}
+
+#sub-text {
+    color: darkgray;
 }
